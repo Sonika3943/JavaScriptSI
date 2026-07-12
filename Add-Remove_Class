@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <style>
+        /* CSS code is not visible in the image */
+    </style>
+</head>
+
+<body>
+
+    <div class="box">Hello</div>
+
+    <button id="add">Add Class</button>
+    <button id="remove">Remove Class</button>
+    <button id="green">green clr</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $("#add").click(function () {
+            $(".box").addClass("red whiteText round shadow b");
+            $(".box").removeClass("green");
+        });
+
+        $("#remove").click(function () {
+            $(".box").removeClass("red whiteText round shadow");
+            $(".box").removeClass("green");
+        });
+
+        $("#green").click(function () {
+            $(".box").removeClass("red");
+            $(".box").addClass("green");
+        });
+    </script>
+
+</body>
+
+</html>
